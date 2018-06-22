@@ -18,12 +18,14 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "10.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.source       = { :path => '.' }
+  s.source       = { :git => 'https://github.com/whitespectre/WSSpeechManager.git', :tag => '1.0.0' }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.source_files  = "WSSpeechManager", "WSSpeechManager/**/*.{h,m,swift}"
 
   # ――― Other Settings ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
+
+  s.swift_version = "4.2"
 
 end
